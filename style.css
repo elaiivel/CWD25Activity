@@ -1,0 +1,174 @@
+.dashboard-title {
+    font-weight: 500;
+}
+
+.card-value {
+    font-weight: 200;
+    font-size: x-large;
+}
+
+span.message{
+    font-weight: 500;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+span.time{
+    color: grey;
+    font-size: smaller;
+}
+
+.badge-updates {
+    margin: 16px 0 0 0
+}
+
+.badge-updates>li {
+    line-height: 22px;
+    margin-bottom: 8px
+}
+
+.badge-updates>li::after {
+    content: '';
+    display: block;
+    clear: both
+}
+
+.badge-updates>li:last-child {
+    margin-bottom: 0
+}
+
+.badge-updates .badge {
+    float: left;
+    margin: 0 16px 0 0
+}
+
+.badge-updates .time {
+    float: right;
+    font-size: 12px;
+    color: rgba(0,0,0,0.54)
+}
+
+ul.sidenav{
+    background-color: #488AFF;
+}
+ul.sidenav>li{
+    background-color: #488AFF;
+}
+
+ul.collapsible>li{
+    background-color: #488AFF;
+}
+
+div.collapsible-body>ul>li{
+    background-color: #488AFF;
+}
+
+.sidenav>li {
+    width: 100%
+}
+
+.sidenav .logo-container {
+    padding: 0 16px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 24px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    box-sizing: content-box
+}
+
+.sidenav .logo-container i.material-icons {
+    line-height: inherit
+}
+
+.sidenav .collapsible {
+    border-bottom: 1px solid rgba(0,0,0,0.2)
+}
+
+.sidenav .collapsible>.active .collapsible-header .chevron {
+    transform: rotate(-90deg)
+}
+
+.sidenav .collapsible>li {
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    transition: background-color .2s
+}
+
+.sidenav .collapsible>li:hover {
+    background-color: rgba(0,0,0,0.05)
+}
+
+.sidenav .collapsible>li.waves-effect {
+    display: block
+}
+
+.sidenav .collapsible>li:last-child {
+    border-bottom: 0
+}
+
+.sidenav .collapsible .collapsible-header {
+    text-transform: uppercase;
+    height: 64px;
+    line-height: 64px
+}
+
+.sidenav .collapsible .collapsible-header:hover {
+    background-color: transparent
+}
+
+.sidenav .collapsible .collapsible-header .chevron {
+    float: right;
+    height: 24px;
+    width: 24px;
+    line-height: 24px;
+    margin: 20px 0 0 0;
+    transition: transform .2s
+}
+
+.sidenav .collapsible .collapsible-body {
+    padding-bottom: 16px;
+    background-color: transparent
+}
+
+.sidenav .collapsible .collapsible-body li>a {
+    padding: 0 16px;
+    transition: background-color .2s ease-out
+}
+
+.sidenav .collapsible .collapsible-body li>a:hover,.sidenav .collapsible .collapsible-body li>a.active {
+    background-color: rgba(0,0,0,0.07)
+}
+
+.sidenav .collapsible .collapsible-body li>a>i.material-icons {
+    margin-right: 16px
+}
+
+.sidenav li.active>a,.sidenav li:hover>a,.sidenav li>a:hover,.sidenav li>a.active {
+    background-color: transparent
+}
+
+.sidenav li.active>a::before,.sidenav li:hover>a::before,.sidenav li>a:hover::before,.sidenav li>a.active::before {
+    transform: scaleY(1)
+}
+
+.sidenav li>a {
+    position: relative;
+    padding: 0 16px
+}
+
+.sidenav li>a::before {
+    left: auto;
+    right: 0
+}
+
+p.taglove{
+    font-weight: 200;
+    font-size: smaller;
+}
+
+div.bluecard{
+    background-color: #3566d0;
+
+}
+

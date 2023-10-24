@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Dashboard - Admin</title>
+</head>
+<body>
+    <!--Navbar fixed-->
+    <div class="navbar-fixed">
+        <nav class="white">
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="" class="brand-logo  black-text">Home</a>
+                    <a href="#" class="sidenav-trigger" data-target="slide-out">
+                        <i class="fa-solid fa-bars black-text"></i>
+                    </a>
+                    <ul class="right">
+                        <li><a href="" class="black-text hide-on-med-and-down">Buy now</a></li>
+                        <li><a href="" class="black-text hide-on-med-and-down"><i class="fa-solid fa-bell"></i></a></li>
+                        <li><a href="" class="black-text"><i class="fa-solid fa-gear"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--Sidenav Structure-->
+    <ul id="slide-out" class="sidenav sidenav-fixed">
+        <li>
+            <a href="index.html" class="logo-container">Admin<i class="fa-solid fa-spa"></i></a>
+        </li>
+        <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li class="bold waves-effect active"><a class="collapsible-header">Pages<i class="material-icons chevron">chevron_left</i></a>            
+                    <div class="collapsible-body">
+                    <ul>
+                    <li><a href="#" class="waves-effect active">Dashboard<i class="material-icons">web</i></a></li>
+                    <li><a href="#" class="waves-effect">Fixed Chart<i class="material-icons">list</i></a></li>
+                    <li><a href="#" class="waves-effect">Grid<i class="material-icons">dashboard</i></a></li>
+                    <li><a href="#" class="waves-effect">Chat<i class="material-icons">chat</i></a></li>
+                    </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">Charts<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                        <li><a href="/pages/admin-line-charts" class="waves-effect">Line Charts<i class="material-icons">show_chart</i></a></li>
+                        <li><a href="/pages/admin-bar-charts" class="waves-effect">Bar Charts<i class="material-icons">equalizer</i></a></li>
+                        <li><a href="/pages/admin-area-charts" class="waves-effect">Area Charts<i class="material-icons">multiline_chart</i></a></li>
+                        <li><a href="/pages/admin-doughnut-charts" class="waves-effect">Doughnut Charts<i class="material-icons">pie_chart</i></a></li>
+                        <li><a href="/pages/admin-financial-charts" class="waves-effect">Financial Charts<i class="material-icons">euro_symbol</i></a></li>
+                        <li><a href="/pages/admin-interactive-charts" class="waves-effect">Interactive Charts<i class="material-icons">touch_app</i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">Tables<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="/pages/admin-fullscreen-table" class="waves-effect">Fullscreen with Chart<i class="material-icons">show_chart</i></a></li>
+                            <li><a href="/pages/admin-table-custom-elements" class="waves-effect">Table with Custom Elements<i class="material-icons">settings</i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">Calendar<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="/pages/admin-calendar" class="waves-effect">Calendar<i class="material-icons">cloud</i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">Headers<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="/pages/admin-header-tabbed" class="waves-effect">Tabbed<i class="material-icons">tab</i></a></li>
+                            <li><a href="/pages/admin-header-metrics" class="waves-effect">Metrics<i class="material-icons">web</i></a></li>
+                            <li><a href="/pages/admin-header-search" class="waves-effect">Search<i class="material-icons">search</i></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="bold waves-effect"><a class="collapsible-header">Account<i class="material-icons chevron">chevron_left</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="/pages/admin-log-in" class="waves-effect">Log In<i class="material-icons">person</i></a></li>
+                            <li><a href="/pages/admin-settings" class="waves-effect">Settings<i class="material-icons">settings</i></a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <!--Dashboard-->
+    <br>
+    <div class="container">
+        <h2>Dashboard</h2>
+        <div class="row">
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Revenue</h6>
+                    <p class="card-value">$12,476.00</p>
+                    <span class="green-text"><i class="fa-solid fa-angle-up"></i> 12%</span>                    
+                    <div id="chartContainerA" style="height: 100px; width: 100%;"></div>
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Clicks</h6>
+                    <p class="card-value"> 11,893</p>
+                    <span class="green-text"><i class="fa-solid fa-angle-up"></i> 8%</span>
+                    <div id="chartContainerB" style="height: 100px; width: 100%;"></div>            
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Users</h6>
+                    <p class="card-value"> 230,648</p>
+                    <span class="red-text"><i class="fa-solid fa-angle-down"></i> 2%</span>
+                    <div id="chartContainerC" style="height: 100px; width: 100%;"></div>            
+                </div>
+            </div>
+            <div class="col s12 m6 l3">
+                <div class="card-panel">
+                    <h6 class="dashboard-title">Conversion Rate</h6>
+                    <p class="card-value">0.24%</p>
+                    <span class="red-text"><i class="fa-solid fa-angle-down"></i> 9%</span>
+                    <div id="chartContainerD" style="height: 100px; width: 100%;"></div>            
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Chart Panel-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="card-panel">
+                    <div class="row center">
+                        <div class="col s4">
+                            <h6 class="dashboard-title">Revenue</h6>
+                            <p class="card-value">$12,476.00</p>
+                            <span><i class="fa-solid fa-angle-up"></i> 12%</span>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="dashboard-title">Users</h6>
+                            <p class="card-value"> 2024</p>
+                            <span><i class="fa-solid fa-angle-up"></i> 9%</span>
+                        </div>
+                        <div class="col s4">
+                            <h6 class="dashboard-title">CTR</h6>
+                            <p class="card-value">0.20%</p>
+                            <span><i class="fa-solid fa-angle-up"></i> 4%</span>  
+                        </div>
+                        <div class="col s12">
+                            <div class="card-panel z-depth-0" id="chartContainer" style="height: 370px; width: 100%;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--chart2-->
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <!--updates-->
+                <div class="card">
+                    <div class="card-content">
+                        <span class="card-title">
+                            <h5>
+                                Updates
+                            </h5></span>
+                        <ul class="badge-updates">
+                            <li>
+                                <span class="new badge red" data-badge-caption="refund"></span>
+                                <span class="message">45$ refunded to Alan Chang</span>
+                                <span class="time">14 minutes ago</span>
+                            </li>
+                            <li>
+                                <span class="new badge green" data-badge-caption="purchase"></span>
+                                <span class="message">45$ from Alan Chang</span>
+                                <span class="time">14 minutes ago</span>
+                            </li>
+                            <li>
+                                <span class="new badge red" data-badge-caption="refund"></span>
+                                <span class="message">45$ refunded to Alan Chang</span>
+                                <span class="time">14 minutes ago</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--Stacked Bar Chart-->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title"><h5>
+                            Stacked Bar Chart
+                        </h5></div>
+                        <div class="chart-wrapper">
+                            <div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Blue Chart-->
+            <div class="col s12 m6 card-panel z-depth-0">
+                <div id="tab-legend-chart-card" class="bluecard">
+                    <div class=container>
+                        <br>
+                        <span class="white-text">    I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</span>
+                    </div>
+                    <div class="container">
+                        <div id="chartContainer3" style="height: 400px; width: 100%;"></div>
+                    </div>
+                </div>
+                <!--Devices-->
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-title"><h5>
+                            Devices
+                        </h5></div>
+                        <div class="chart-wrapper">
+                            <div id="chartContainer4" style="height: 300px; width: 100%;"></div>
+                        </div>
+                    </div>
+                </div>        
+            </div>           
+        </div>
+    </div>
+    <!--Footer-->
+    <footer class="page-footer white black-text z-depth-4">
+        <div class="container">
+            <div class="row">
+                <div class="col s6 m3">
+                    <img src="https://themes.materializecss.com/cdn/shop/t/1/assets/materialize-logo.png?v=179096390591197713681528499937" alt="" class="responsive-img">
+                    <p class="taglove grey-text">Made with love by Materialize</p>
+                </div>
+                <div class="col s6 m3">
+                    <h5>About</h5>
+                    <a href="" class="grey-text">Blog</a>
+                    <br>
+                    <a href="" class="grey-text">Pricing</a>
+                    <br>
+                    <a href="" class="grey-text">Docs</a>
+                </div>
+                <div class="col s6 m3">
+                    <h5>Connect</h5>
+                    <a href="" class="grey-text">Community</a>
+                    <br>
+                    <a href="" class="grey-text">Subscribe</a>
+                    <br>
+                    <a href="" class="grey-text">Email</a>
+                </div>
+                <div class="col s6 m3">
+                    <h5>Contact</h5>
+                    <a href="" class="grey-text">Twitter</a>
+                    <br>
+                    <a href="" class="grey-text">Facebook</a>
+                    <br>
+                    <a href="" class="grey-text">Github</a>
+                </div>
+            </div>
+        </div>
+        <div style="height: 50px"></div>
+    </footer>
+
+
+    
+
+    <!--Jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!--FontAwesome Link-->
+    <script src="https://kit.fontawesome.com/fed3ef3893.js" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Canvasjs-->
+    <script src="https://cdn.canvasjs.com/canvasjs.min.js"></script>
+    <script src="js/chart.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            $('.collapsible').collapsible();
+        });
+    </script>
+    
+</body>
+</html>
